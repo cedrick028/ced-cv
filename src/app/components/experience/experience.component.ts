@@ -19,7 +19,7 @@ export class ExperienceComponent implements OnInit {
         'Implements reusable components',
         'Collaborating with designers and senior developers from Houston, TX'
       ],
-      logo: '../../../assets/images/corelab.png',
+      logo: 'assets/images/corelab.png',
       techStack: [
         'HTML5',
         'CSS',
@@ -41,7 +41,7 @@ export class ExperienceComponent implements OnInit {
         'Creates static, animated, HTML5, VPAID and Rich Media banner',
         'Implements animations using GSAP'
       ],
-      logo: '../../../assets/images/smartlyio.png',
+      logo: 'assets/images/smartlyio.png',
       techStack: [
         'HTML5',
         'CSS',
@@ -60,7 +60,7 @@ export class ExperienceComponent implements OnInit {
         'Creates multiple different ad versions and sizes',
         'Handles peer-to-peer QA'
       ],
-      logo: '../../../assets/images/wideout.png',
+      logo: 'assets/images/wideout.png',
       techStack: [
         'HTML5',
         'CSS',
@@ -78,7 +78,7 @@ export class ExperienceComponent implements OnInit {
         'Assist in fixing basic network and internet issues',
         'Learn and apply basic networking concepts',
       ],
-      logo: '../../../assets/images/tdk.png',
+      logo: 'assets/images/tdk.png',
       techStack: []
     },
   ]
