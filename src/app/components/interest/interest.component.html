@@ -1,0 +1,15 @@
+<div>
+  <p class="flex items-center gap-2 text-2xl font-bold tracking-wide mb-5 xl:mb-10"><img src="../../../assets/images/interest_icon.png" class="w-10 h-auto" /> AFK</p>
+
+  <p class="xl:indent-12 ml-2 xl:ml-12">When I’m not coding, I enjoy staying active and creative. I bike regularly, play basketball, and closely follow the NBA and PBA. I also build Gundam models, which lets me slow down and focus on detail. Cooking is another creative outlet for me, and I unwind by listening to comedy podcasts.</p>
+
+  <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-5 mt-5 xl:mt-10 xl:ml-10">
+    <div *ngFor="let interest of interestList" class="flex gap-4 p-4">
+      <img [src]="interest.icon" class="w-20 h-20 -ml-1 border rounded-md p-2" />
+      <div>
+        <p class="font-bold">{{interest.title}}</p>
+        <p class="text-sm mt-2 muted-text">{{interest.description}}</p>
+      </div>
+    </div>
+  </div>
+</div>

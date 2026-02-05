@@ -1,0 +1,7 @@
+.active-dot {
+  background-color: var(--primary-text);
+}
+
+.inactive-dot {
+  background-color: #e5e7eb;
+}

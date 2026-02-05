@@ -1,0 +1,17 @@
+<div>
+  <!-- <p class="flex items-center gap-2 text-2xl font-bold tracking-wide mb-10"><mat-icon>folder_open</mat-icon> Projects</p> -->
+  <p class="flex items-center gap-2 text-2xl font-bold tracking-wide mb-5 md:mb-10"><img src="../../../assets/images/projects_icon.png" class="w-10 h-auto -mt-1" /> Projects</p>
+
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-10 lg:ml-10">
+    <div *ngFor="let proj of projectList">
+      <a [href]="proj.link" target="_blank" class="cursor-pointer rounded-xl p-4 hover:bg-white hover:shadow-md">
+        <p class="text-lg font-bold">{{proj.name}}</p>
+        <p class="text-sm muted-text mt-1">{{proj.description}}</p>
+
+        <div class="flex flex-wrap gap-2 mt-5 md:mt-10">
+          <p *ngFor="let stack of proj.techStack" class="text-xs font-medium tracking-wide px-3 py-1 border rounded-md">{{stack}}</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

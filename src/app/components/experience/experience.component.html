@@ -1,0 +1,32 @@
+<div>
+  <!-- <p class="flex items-center gap-2 text-2xl font-bold tracking-wide mb-10"><mat-icon>work</mat-icon> Experience</p> -->
+  <p class="flex items-center gap-2 text-2xl font-bold tracking-wide mb-5 md:mb-10"><img src="../../../assets/images/experience_icon.png" class="w-10 h-auto -mt-1" /> Experience</p>
+
+  <div *ngFor="let exp of experienceList" class="md:flex mx-2 md:mx-0">
+    <p class="min-w-48 md:text-right md:mr-8 lg:mr-16 muted-text mt-3">{{exp.date}}</p>
+    <div class="flex md:gap-8 lg:gap-14 md:border-l mt-4 md:mt-0">
+      <div class="w-3 h-3 rounded-[50%] flex-shrink-0 -ml-[6px] mt-5 active-dot hidden md:block"></div>
+      <div class="w-full">
+        <div class="flex gap-5 mb-5 cursor-pointer">
+          <div class="border rounded-md p-2">
+            <img [src]="exp.logo" class="w-8 h-auto flex-shrink-0" />
+          </div>
+          <div>
+            <p class="text-lg font-bold tracking-wide">{{exp.company}}</p>
+            <p class="muted-text">{{exp.position}}</p>
+          </div>
+        </div>
+
+        <div class="md:pl-[64px]">
+          <ul>
+            <li *ngFor="let res of exp.responsibilities" class="flex items-center text-sm muted-text">• {{res}}</li>
+          </ul>
+        </div>
+
+        <div class="flex flex-wrap lg:flex-nowrap gap-2 md:pl-[64px] mt-5 pb-6 md:pb-10">
+          <p *ngFor="let stack of exp.techStack" class="text-xs leading-none font-medium tracking-wide border rounded-md px-3 py-1">{{stack}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

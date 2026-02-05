@@ -1,0 +1,38 @@
+@use '@angular/material' as mat;
+
+/* Include core styles ONCE */
+@include mat.core();
+
+/* Custom blue palette */
+$custom-blue: (
+  50:  #eff6ff,
+  100: #dbeafe,
+  200: #bfdbfe,
+  300: #93c5fd,
+  400: #60a5fa,
+  500: #93c5fd, // ✅ MUST be 500
+  600: #3b82f6,
+  700: #2563eb,
+  800: #1d4ed8,
+  900: #1e40af,
+  contrast: (
+    500: #000,
+  )
+);
+
+/* Define palettes */
+$primary: mat.define-palette($custom-blue, 500);
+$accent: mat.define-palette($custom-blue, 500);
+$warn: mat.define-palette(mat.$red-palette);
+
+/* Define theme */
+$theme: mat.define-light-theme((
+  color: (
+    primary: $primary,
+    accent: $accent,
+    warn: $warn,
+  )
+));
+
+/* Apply theme */
+@include mat.all-component-themes($theme);

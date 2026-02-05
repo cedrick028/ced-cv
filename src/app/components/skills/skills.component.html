@@ -1,0 +1,68 @@
+<div>
+  <!-- <p class="flex items-center gap-2 text-2xl font-bold tracking-wide mb-10"><mat-icon>code</mat-icon> Technical Skills</p> -->
+  <p class="flex items-center gap-2 text-2xl font-bold tracking-wide mb-5 xl:mb-10"><img src="../../../assets/images/skills_icon.png" class="w-10 h-auto -mt-1" /> Skills</p>
+
+  <div class="grid md:grid-cols-2 gap-10 ml-2 lg:ml-10">
+    <div>
+      <p class="text-lg font-bold tracking-wide">Front-End</p>
+      <div class="flex gap-10 mt-4">
+        <div *ngFor="let frontend of frontendList" class="flex flex-col items-center">
+          <img [src]="frontend.icon" class="w-16 h-uto border rounded-md p-2" />
+          <p class="text-sm font-medium tracking-wide mt-2">{{frontend.label}}</p>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <p class="text-lg font-bold tracking-wide">Frameworks</p>
+      <div class="flex gap-10 mt-4">
+        <div *ngFor="let framework of frameworkList" class="flex flex-col items-center">
+          <img [src]="framework.icon" class="w-16 h-uto border rounded-md p-2" />
+          <p class="text-sm font-medium tracking-wide mt-2">{{framework.label}}</p>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <p class="text-lg font-bold tracking-wide">Back-End</p>
+      <div class="flex gap-10 mt-4">
+        <div *ngFor="let backend of backendList" class="flex flex-col items-center">
+          <img [src]="backend.icon" class="w-16 h-uto border rounded-md p-2" />
+          <p class="text-sm font-medium tracking-wide mt-2">{{backend.label}}</p>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <p class="text-lg font-bold tracking-wide">CSS Libraries</p>
+      <div class="flex gap-10 mt-4">
+        <div *ngFor="let css of cssFrameworkList" class="flex flex-col items-center">
+          <img [src]="css.icon" class="w-16 h-uto border rounded-md p-2" />
+          <p class="text-sm font-medium tracking-wide mt-2">{{css.label}}</p>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <p class="text-lg font-bold tracking-wide">Tools</p>
+      <div class="flex gap-10 mt-4">
+        <div *ngFor="let tool of toolsList" class="flex flex-col items-center">
+          <img [src]="tool.icon" class="w-16 h-uto border rounded-md p-2" />
+          <p class="text-sm font-medium tracking-wide mt-2">{{tool.label}}</p>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <p class="text-lg font-bold tracking-wide">Other</p>
+      <div class="flex gap-10 mt-4">
+        <div *ngFor="let other of otherList" class="flex flex-col items-center">
+          <img [src]="other.icon" class="w-16 h-uto border rounded-md p-2" />
+          <p class="text-sm font-medium tracking-wide mt-2">{{other.label}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
