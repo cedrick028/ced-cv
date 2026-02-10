@@ -39,20 +39,20 @@ export class ProfileComponent implements AfterViewInit {
       opacity: 0
     });
 
-    gsap.to(this.introText.nativeElement, 2, {
+    gsap.to(this.introText.nativeElement, 1, {
       y: 0,
       opacity: 1,
-      ease: 'elastic.out',
+      ease: 'back.out',
       scrollTrigger: {
         trigger: this.introText.nativeElement,
         start: 'top 80%'
       }
     });
 
-    gsap.to(this.profilePic.nativeElement, 1.6, {
+    gsap.to(this.profilePic.nativeElement, 1, {
       y: 0,
       opacity: 1,
-      ease: 'elastic.out',
+      ease: 'back.out',
       scrollTrigger: {
         trigger: this.profilePic.nativeElement,
         start: 'top 80%'
