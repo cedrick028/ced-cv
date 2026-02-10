@@ -66,6 +66,9 @@ MIT
 @angular/router
 MIT
 
+gsap
+Standard 'no charge' license: https://gsap.com/standard-license.
+
 rxjs
 Apache-2.0
                                Apache License
