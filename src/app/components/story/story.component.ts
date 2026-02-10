@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'app-story',
@@ -58,6 +58,7 @@ export class StoryComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }

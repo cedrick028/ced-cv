@@ -12,7 +12,7 @@ export class InterestComponent implements OnInit {
     { id: 2, icon: 'assets/images/biking.jpg', title: 'Biking', description: 'Staying active and clearing my mind through long rides' },
     { id: 3, icon: 'assets/images/hobby.jpg', title: 'Hobby', description: 'Practicing patience and attention to detail through model kits' },
     { id: 4, icon: 'assets/images/cooking.jpg', title: 'Cooking', description: 'Exploring new recipes and improving my cooking skills' },
-    { id: 5, icon: 'assets/images/podcast.jpg', title: 'Podcats', description: 'Relaxing and recharging with light, humorous content' }
+    { id: 5, icon: 'assets/images/podcast.jpg', title: 'Podcast', description: 'Relaxing and recharging with light, humorous content' }
   ]
 
   constructor() { }

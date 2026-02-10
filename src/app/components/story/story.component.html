@@ -12,7 +12,7 @@
           <p class="text-lg font-bold">{{story.title}}</p>
           <img [src]="story.icon" class="w-8 h-auto flex-shrink-0" />
         </div>
-        <ul class="mt-2">
+        <ul class="mt-2 overflow-hidden">
           <li *ngFor="let desc of story.description" class="mb-2 ml-5">{{desc}}</li>
         </ul>
       </div>
