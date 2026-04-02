@@ -33,7 +33,8 @@ export class SkillsComponent implements OnInit {
   toolsList: any[] = [
     { icon: 'assets/images/git.png', label: 'Git' },
     { icon: 'assets/images/npm.png', label: 'NPM' },
-    { icon: 'assets/images/vite.png', label: 'Vite' }
+    { icon: 'assets/images/vite.png', label: 'Vite' },
+    { icon: 'assets/images/github.png', label: 'GitHub' },
   ]
 
   otherList: any[] = [
